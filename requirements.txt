@@ -59,10 +59,9 @@ gitdb==4.0.11
 GitPython==3.1.43
 google-auth==2.35.0
 googleapis-common-protos==1.65.0
-gradio==5.4.0
-gradio_client==1.4.2
 greenlet==3.1.1
 grpcio==1.67.1
+gunicorn==20.1.0
 h11==0.14.0
 hiredis==2.3.2
 httpcore==1.0.6
@@ -163,7 +162,6 @@ python-multipart==0.0.12
 python-ulid==1.1.0
 pytz==2024.2
 pyviz_comms==3.0.3
-pywin32==307
 PyYAML==6.0.2
 pyzmq==26.2.0
 redis==5.0.7
@@ -219,11 +217,8 @@ watchdog==5.0.3
 watchfiles==0.22.0
 wcwidth==0.2.13
 webencodings==0.5.1
-websocket-client==1.8.0
-websockets==13.1
 Werkzeug==3.0.4
 wrapt==1.16.0
 xyzservices==2024.9.0
 yarl==1.13.1
-yt-dlp==2024.10.22
 zipp==3.20.2
