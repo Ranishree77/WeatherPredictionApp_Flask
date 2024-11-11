@@ -5,7 +5,6 @@ This is a simple Weather Prediction App built using Flask. The application allow
 ## Features
 - Retrieve and display current weather data for any city.
 - Display the weather conditions including temperature, humidity, and wind speed.
-- Includes a "Company Info" button that provides information about PM Accelerator and links to the [LinkedIn page](https://www.linkedin.com/company/pm-accelerator/).
 
 ## Tech Stack
 - **Backend:** Flask
