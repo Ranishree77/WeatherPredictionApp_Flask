@@ -40,3 +40,5 @@ This is a simple Weather Prediction App built using Flask. The application allow
 
 5. flask run
   Open your browser and navigate to http://127.0.0.1:5000 to access the app.
+
+Use this app from here : https://weatherpredictionapp-flask.onrender.com/ 
