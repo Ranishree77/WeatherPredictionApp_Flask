@@ -163,7 +163,6 @@ python-multipart==0.0.12
 python-ulid==1.1.0
 pytz==2024.2
 pyviz_comms==3.0.3
-pywin32==307
 PyYAML==6.0.2
 pyzmq==26.2.0
 redis==5.0.7
