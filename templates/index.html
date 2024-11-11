@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #weather-details {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <h2>Created by Ranishree Anegundi</h2>
+
+    <button onclick="showInfo()">Company Info</button>
+
+    <input type="text" id="city-input" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="weather-details">
+      <p><strong>Location:</strong> <span id="location"></span></p>
+      <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+      <p><strong>Weather:</strong> <span id="weather"></span></p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+      <p><strong>Wind Speed:</strong> <span id="wind-speed"></span></p>
+    </div>
+
+    <script>
+      async function getWeather() {
+        const city = document.getElementById("city-input").value;
+
+        const response = await fetch(`/get_weather?city=${city}`);
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          alert(errorData.error);
+          return;
+        }
+
+        const data = await response.json();
+        document.getElementById("location").textContent = data.location;
+        document.getElementById("temperature").textContent = data.temperature;
+        document.getElementById("weather").textContent = data.weather;
+        document.getElementById("humidity").textContent = data.humidity;
+        document.getElementById("wind-speed").textContent = data.wind_speed;
+      }
+
+      function showInfo() {
+        alert(
+          "PM Accelerator helps aspiring project managers advance their careers by offering real-world training, mentorship, and resources. Visit our LinkedIn page for more details."
+        );
+      }
+    </script>
+  </body>
+</html>
